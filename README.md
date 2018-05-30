@@ -13,6 +13,7 @@ For this project I suggest using Visual Studio Code.
 * Angular v6 Snippets snippets, author John Papa
 * Auto Rename Tag, author Jun Han
 * Bracket Pair Colorizer , author CoenraadS
+* Prettier, author Esben Petersen
 
 ## Setup and install
 
