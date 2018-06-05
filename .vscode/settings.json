@@ -1,0 +1,17 @@
+{
+  "prettier.trailingComma": "all",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "prettier.arrowParens": "always",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  // Enable per-language
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.singleQuote": true
+}
