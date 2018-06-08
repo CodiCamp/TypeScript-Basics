@@ -1,12 +1,12 @@
-// Object literal improvements
-const path = './dist';
-const filename = 'app.js';
+// // Object literal improvements
+// const path = './dist';
+// const filename = 'app.js';
 
-const getFullPath = function() {
-  console.log(this);
-  return this.path + this.filename;
-};
+// const getFullPath = function() {
+//   console.log(this);
+//   return this.path + this.filename;
+// };
 
-const config = { path, filename, getFullPath };
+// const config = { path, filename, getFullPath };
 
-console.log(config.getFullPath());
+// console.log(config.getFullPath());
