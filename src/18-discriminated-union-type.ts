@@ -7,10 +7,12 @@ interface Order {
 interface Wirecard {
   paymentId: string;
   storeId: string;
+  type: 'wirecard';
 }
 
 interface PayPal {
   email: string;
+  type: 'paypal';
 }
 
 // 1. Create intersection types
@@ -25,12 +27,14 @@ const order: Order = {
 
 const orderCard: CheckoutCard = {
   ...order,
+  type: 'wirecard',
   paymentId: 'someWireCardGeneratedPaymentId',
   storeId: 'yourStoreId',
 };
 
 const orderPayPal: CheckoutPayPal = {
   ...order,
+  type: 'paypal',
   email: 'test@test.me',
 };
 
@@ -41,4 +45,11 @@ type Payload = CheckoutCard | CheckoutPayPal;
 function checkout(payload: Payload) {
   // Detect different type of order by using discriminating union type
   // Use type guards
+  if (payload.type === 'wirecard') {
+    payload.paymentId;
+  }
+
+  if (payload.type === 'paypal') {
+    payload.email;
+  }
 }
