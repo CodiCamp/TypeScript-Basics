@@ -6,6 +6,7 @@ interface Order {
 
 interface Wirecard {
   paymentId: string;
+  storeId: string;
 }
 
 interface PayPal {
@@ -25,6 +26,7 @@ const order: Order = {
 const orderCard: CheckoutCard = {
   ...order,
   paymentId: 'someWireCardGeneratedPaymentId',
+  storeId: 'yourStoreId',
 };
 
 const orderPayPal: CheckoutPayPal = {
