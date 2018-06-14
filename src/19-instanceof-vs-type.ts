@@ -10,4 +10,10 @@ class Team {
   constructor(public title: string, public developers: Developer[]) {}
 }
 
-function getNameFromObject(payload: Developer | Team) {}
+function getNameFromObject(payload: Developer | Team) {
+  if (payload instanceof Developer) {
+    return payload.name;
+  }
+
+  return payload.title;
+}
