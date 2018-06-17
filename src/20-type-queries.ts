@@ -4,5 +4,4 @@ const developer = {
   xp: 10,
 };
 
-// In Javascript
-// typeof developer === 'object'
+// Use typeof operator to create a new type of developer
